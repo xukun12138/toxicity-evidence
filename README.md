@@ -4,7 +4,7 @@ A research companion to **Toxicity Detection for Generative AI Systems: A Survey
 
 The survey asks when toxicity evidence can justify a particular action in a generative AI system. This companion makes the bibliography inspectable and turns the proposed SCOPE framework into reusable records. It does not add empirical safety results or certify systems.
 
-Repository: [xukun12138/toxicity-evidence](https://github.com/xukun12138/toxicity-evidence). The intended GitHub Pages address is [xukun12138.github.io/toxicity-evidence/](https://xukun12138.github.io/toxicity-evidence/); this address is a deployment target, not a claim that deployment has been verified.
+Website: [xukun12138.github.io/toxicity-evidence/](https://xukun12138.github.io/toxicity-evidence/). Repository: [xukun12138/toxicity-evidence](https://github.com/xukun12138/toxicity-evidence).
 
 ## What you can do
 
