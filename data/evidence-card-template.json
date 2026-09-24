@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "id": null,
+  "title": null,
+  "record_kind": "evidence_card",
+  "record_status": "unreviewed_template",
+  "provenance": {
+    "source_document": null,
+    "source_sha256": null,
+    "source_locations": [],
+    "reference_keys": [],
+    "curator": null,
+    "reviewer": null,
+    "reviewed_at": null,
+    "verification_level": null
+  },
+  "source_evidence": {
+    "original_endpoint": null,
+    "object_and_configuration": null,
+    "source_result": null,
+    "valid_bounded_use": null,
+    "population_and_sampling_unit": null,
+    "denominators": [],
+    "judge_and_adjudication": null,
+    "limitations": [],
+    "evidence_role_for_this_claim": null
+  },
+  "target_claim": {
+    "statement": null,
+    "is_hypothetical_extension": null,
+    "attribution_note": null,
+    "action": null
+  },
+  "coordinate_profile": {
+    "S": {
+      "source_condition": null,
+      "target_condition": null,
+      "support_status": null,
+      "reason": null
+    },
+    "C": {
+      "source_condition": null,
+      "target_condition": null,
+      "support_status": null,
+      "reason": null
+    },
+    "O": {
+      "source_condition": null,
+      "target_condition": null,
+      "support_status": null,
+      "reason": null
+    },
+    "P": {
+      "source_condition": null,
+      "target_condition": null,
+      "support_status": null,
+      "reason": null
+    },
+    "E": {
+      "source_condition": null,
+      "target_condition": null,
+      "support_status": null,
+      "reason": null
+    }
+  },
+  "quality_notes": {
+    "judge_validity": null,
+    "statistical_precision": null,
+    "population_coverage": null,
+    "independent_replication": null,
+    "other_limitations": []
+  },
+  "transport_test": {
+    "design": null,
+    "matched_conditions": [],
+    "changed_coordinates": [],
+    "retained_endpoint": null,
+    "benign_sensitive_controls": null,
+    "adjudication": null,
+    "sampling_unit_and_uncertainty": null,
+    "acceptable_degradation": null,
+    "absolute_action_requirement": null,
+    "stopping_rule": null,
+    "result": null
+  },
+  "decision": {
+    "supported_claim": null,
+    "unsupported_extension": null,
+    "recommended_next_evidence": [],
+    "expiry_or_retest_triggers": []
+  },
+  "use_note": "A completed record is documentation, not proof of safety. Null means not filled in or not established by the cited material; it never means zero risk. Support status and evidence quality must be assessed separately."
+}

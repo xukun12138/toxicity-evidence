@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "source": "Supplied manuscript.tex and sample-base.bib",
+  "source_sha256": {
+    "manuscript.tex": "9c397b79144e602352151378c0cb3ef5278e5e4a0e7f4874239c10067c6043a3",
+    "sample-base.bib": "81d1b368e3fef3a70437a2a4888358154f86e2aacb49e8fcf05ae594abf96b8f"
+  },
+  "record_count": 183,
+  "active_citation_command_count": 165,
+  "citation_location_meaning": "Where a reference is cited, not a claim-level code or systematic coverage label",
+  "external_verification": "None in this extraction",
+  "missing_link_policy": "Absent DOI/URL fields are null; discovery links run exact-title searches",
+  "manuscript_corpus_cutoff": "23 August 2026",
+  "count_notes": {
+    "unique_active_cited_works": 183,
+    "bibliography_records": 183,
+    "uncited_bibliography_keys": [],
+    "descriptive_corpus_declared_in_body": 183,
+    "publication_status_declared_in_body": {
+      "peer_reviewed": 182,
+      "technical_report": 1
+    },
+    "channel_specific_display_subset_declared_in_body": 113,
+    "unused_preamble_macros": {
+      "CorpusTotal": 181,
+      "PeerTotal": 180,
+      "PreprintTotal": 1
+    },
+    "interpretation": "The latest manuscript explicitly includes all 183 cited works in descriptive corpus maps. There is no separate 181-work synthesis corpus established by its body. The unused 181/180 macros are a bookkeeping discrepancy; the 113-work subset belongs only to the channel-carrier display. No item-level display assignments are supplied, so none are reconstructed."
+  }
+}

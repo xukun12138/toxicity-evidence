@@ -1,0 +1,68 @@
+[
+  {
+    "number": "1",
+    "title": "Introduction",
+    "label": "sec:introduction",
+    "source_line": 128
+  },
+  {
+    "number": "2",
+    "title": "Review Design and Evidence Coding",
+    "label": "sec:review-protocol",
+    "source_line": 304
+  },
+  {
+    "number": "3",
+    "title": "The SCOPE Framework: Defining Governance Validity",
+    "label": "sec:scope-framework",
+    "source_line": 349
+  },
+  {
+    "number": "4",
+    "title": "Content Measurement: From Labels to Policy-Conditioned Evidence",
+    "label": "sec:content-measurement",
+    "source_line": 436
+  },
+  {
+    "number": "5",
+    "title": "Interactive Behavior: From Output Scores to Trajectory-Level Safety",
+    "label": "sec:interactive-behavior",
+    "source_line": 512
+  },
+  {
+    "number": "6",
+    "title": "Compositional Semantics, Generation Risk, and Visual Safety",
+    "label": "sec:multimodal-generation",
+    "source_line": 582
+  },
+  {
+    "number": "7",
+    "title": "Hidden Components as Toxicity Control Channels",
+    "label": "sec:hidden-components",
+    "source_line": 656
+  },
+  {
+    "number": "8",
+    "title": "Adaptive Evasion and Detection–Mitigation Coupling",
+    "label": "sec:adaptive-evasion",
+    "source_line": 751
+  },
+  {
+    "number": "9",
+    "title": "Decision-Oriented Governance Under Uncertainty",
+    "label": "sec:decision-governance",
+    "source_line": 803
+  },
+  {
+    "number": "10",
+    "title": "Cross-Cutting Synthesis and Research Agenda",
+    "label": "sec:synthesis-agenda",
+    "source_line": 864
+  },
+  {
+    "number": "11",
+    "title": "Conclusion",
+    "label": "sec:conclusion",
+    "source_line": 923
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "key": "Gehman2020RealToxicityPrompts",
+    "name": "RealToxicityPrompts",
+    "url": "https://github.com/allenai/real-toxicity-prompts",
+    "kind": "Code and data",
+    "description": "Prompt-continuation toxicity evaluation resources.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Gehman2020RealToxicityPrompts",
+    "name": "RealToxicityPrompts dataset",
+    "url": "https://huggingface.co/datasets/allenai/real-toxicity-prompts",
+    "kind": "Dataset",
+    "description": "Author-hosted prompt dataset and dataset card.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Rottger2021HateCheck",
+    "name": "HateCheck",
+    "url": "https://github.com/paul-rottger/hatecheck-data",
+    "kind": "Dataset",
+    "description": "Functional test cases for hate-speech detection.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Mathew2021HateXplain",
+    "name": "HateXplain",
+    "url": "https://github.com/hate-alert/HateXplain",
+    "kind": "Code and data",
+    "description": "Hate/offensive/normal annotations, target communities and rationales.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Han2024WildGuard",
+    "name": "WildGuard",
+    "url": "https://github.com/allenai/wildguard",
+    "kind": "Model and code",
+    "description": "Moderation tools covering prompt harm, response harm and refusal.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Han2024WildGuard",
+    "name": "WildGuardMix",
+    "url": "https://huggingface.co/datasets/allenai/wildguardmix",
+    "kind": "Dataset",
+    "description": "Author-hosted moderation training and evaluation data.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Bassani2024GuardBench",
+    "name": "GuardBench",
+    "url": "https://github.com/AmenRa/GuardBench",
+    "kind": "Evaluation toolkit",
+    "description": "A common interface for guardrail model evaluation datasets.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Mazeika2024HarmBench",
+    "name": "HarmBench",
+    "url": "https://github.com/centerforaisafety/HarmBench",
+    "kind": "Benchmark and code",
+    "description": "Evaluation resources for automated red teaming and robust refusal.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Chao2024JailbreakBench",
+    "name": "JailbreakBench",
+    "url": "https://github.com/JailbreakBench/jailbreakbench",
+    "kind": "Benchmark and code",
+    "description": "An evaluation framework with defined threat models and scoring.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Rottger2023XSTest",
+    "name": "XSTest",
+    "url": "https://github.com/paul-rottger/xstest",
+    "kind": "Test suite",
+    "description": "Tests for exaggerated safety and inappropriate refusal.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Wang2025MMSafeAware",
+    "name": "MMSafeAware",
+    "url": "https://github.com/Jarviswang94/MMSafetyAwareness",
+    "kind": "Dataset and code",
+    "description": "Multimodal safety-awareness data with unsafe and over-safety subsets.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  },
+  {
+    "key": "Xu2026ConceptQuickLook",
+    "name": "Concept QuickLook",
+    "url": "https://arxiv.org/abs/2502.08921",
+    "kind": "Paper",
+    "description": "Primary author-deposited report of static concept-file inspection.",
+    "verified_on": "2026-09-24",
+    "verification": "Primary resource page opened; linkage matched to manuscript BibTeX key. No experiments reproduced."
+  }
+]

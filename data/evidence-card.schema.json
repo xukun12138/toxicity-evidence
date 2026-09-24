@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:scope-companion:evidence-card:1.0",
+  "title": "SCOPE evidence card",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "record_kind",
+    "record_status",
+    "provenance",
+    "source_evidence",
+    "target_claim",
+    "coordinate_profile",
+    "quality_notes",
+    "transport_test",
+    "decision",
+    "use_note"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coordinate_profile": {
+      "type": "object",
+      "required": [
+        "S",
+        "C",
+        "O",
+        "P",
+        "E"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "S": {
+          "type": "object",
+          "required": [
+            "source_condition",
+            "target_condition",
+            "support_status",
+            "reason"
+          ],
+          "properties": {
+            "source_condition": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "target_condition": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "support_status": {
+              "enum": [
+                "direct",
+                "bridged",
+                "unsupported",
+                "unreported",
+                null
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "C": {
+          "type": "object",
+          "required": [
+            "source_condition",
+            "target_condition",
+            "support_status",
+            "reason"
+          ],
+          "properties": {
+            "source_condition": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "target_condition": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "support_status": {
+              "enum": [
+                "direct",
+                "bridged",
+                "unsupported",
+                "unreported",
+                null
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "O": {
+          "type": "object",
+          "required": [
+            "source_condition",
+            "target_condition",
+            "support_status",
+            "reason"
+          ],
+          "properties": {
+            "source_condition": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "target_condition": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "support_status": {
+              "enum": [
+                "direct",
+                "bridged",
+                "unsupported",
+                "unreported",
+                null
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "P": {
+          "type": "object",
+          "required": [
+            "source_condition",
+            "target_condition",
+            "support_status",
+            "reason"
+          ],
+          "properties": {
+            "source_condition": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "target_condition": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "support_status": {
+              "enum": [
+                "direct",
+                "bridged",
+                "unsupported",
+                "unreported",
+                null
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "E": {
+          "type": "object",
+          "required": [
+            "source_condition",
+            "target_condition",
+            "support_status",
+            "reason"
+          ],
+          "properties": {
+            "source_condition": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "target_condition": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "support_status": {
+              "enum": [
+                "direct",
+                "bridged",
+                "unsupported",
+                "unreported",
+                null
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "description": "Null preserves unfilled or unestablished information. Validation of this record’s structure does not establish evidence quality or safety."
+}

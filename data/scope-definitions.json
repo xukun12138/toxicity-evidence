@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "title": "SCOPE: bounded evidence-to-action claims",
+  "source": {
+    "document": "manuscript.tex",
+    "source_sha256": "9c397b79144e602352151378c0cb3ef5278e5e4a0e7f4874239c10067c6043a3",
+    "section": "3",
+    "section_title": "The SCOPE Framework: Defining Governance Validity",
+    "label": "sec:scope-framework"
+  },
+  "purpose": "Record what a claim’s evidence supports and what comparison is needed for a proposed extension.",
+  "coordinate_order": [
+    "S",
+    "C",
+    "O",
+    "P",
+    "E"
+  ],
+  "coordinates": [
+    {
+      "id": "S",
+      "name": "Safety policy",
+      "question": "Which harmful event, target, and context are governed?",
+      "definition": "The policy maps an outcome, context, and target to a harm event. Category crosswalks preserve meaning; matching binary output formats does not establish policy equivalence.",
+      "record": [
+        "categories and severity",
+        "targets and contexts",
+        "benign-sensitive cases",
+        "annotators and disagreement",
+        "source–target category crosswalk with exclusions and indeterminate cases"
+      ],
+      "failure_class": "Policy substitution",
+      "unsupported_inference": "One label set certifies every harm policy."
+    },
+    {
+      "id": "C",
+      "name": "Control channel and carrier",
+      "question": "Through which routes can behavior change, and where is the evidence carried?",
+      "definition": "A control channel permits behavior changes through prompts, history, images, retrieval, tools, decoding, embeddings, adapters, or fine-tuning. A carrier may be content, an interaction, a multimodal composition, a component, or the deployed system.",
+      "record": [
+        "exposed routes",
+        "risk carriers",
+        "actor access",
+        "tested compositions",
+        "per-route tests"
+      ],
+      "failure_class": "Channel omission",
+      "unsupported_inference": "Prompt robustness certifies tools, images, or components."
+    },
+    {
+      "id": "O",
+      "name": "Observation and adjudication unit",
+      "question": "What event is observed, with which information and judge?",
+      "definition": "The governed unit, available information, and adjudication must match the claim: an artifact, request, response, refusal, trajectory, or executed component.",
+      "record": [
+        "governed event",
+        "observation unit",
+        "information available at decision time",
+        "judge and adjudication procedure",
+        "indeterminate cases"
+      ],
+      "failure_class": "Observation-unit substitution",
+      "unsupported_inference": "Response toxicity equals intent, refusal quality, or system safety."
+    },
+    {
+      "id": "P",
+      "name": "Probability regime",
+      "question": "Which population, system state, sampling procedure, and access budget define the event?",
+      "definition": "Risk is conditional on the population, sampling, generation settings, version, and adversarial regime. Single outputs, repeated access, adaptive search, and changed compositions do not share an automatic probability interpretation.",
+      "record": [
+        "population and input families",
+        "sampling and seeds",
+        "model and component versions",
+        "adversary and access budget",
+        "stopping rule",
+        "uncertainty at the actual sampling unit"
+      ],
+      "failure_class": "Regime extrapolation",
+      "unsupported_inference": "One seed or failed finite search establishes durable risk."
+    },
+    {
+      "id": "E",
+      "name": "Enforcement action",
+      "question": "What decision follows, at which threshold and with which safeguards?",
+      "definition": "Action links errors to costs, severity, reversibility, review capacity, and safeguards. Evidence sufficient for triage can be insufficient for automatic restriction or release.",
+      "record": [
+        "action and threshold",
+        "loss and severity",
+        "abstention and review capacity",
+        "group burden",
+        "appeal and reversibility",
+        "monitoring and expiry"
+      ],
+      "failure_class": "Action escalation",
+      "unsupported_inference": "High AUC alone justifies automatic blocking or release."
+    }
+  ],
+  "support_statuses": [
+    {
+      "id": "direct",
+      "short": "D",
+      "definition": "The target claim stays within the evaluated domain. This does not mean the evidence is strong."
+    },
+    {
+      "id": "bridged",
+      "short": "B",
+      "definition": "A source–target comparison retains an identifiable toxicity endpoint, states an acceptable degradation, and supplies uncertainty analysis supporting that tolerance. The target must also meet the action’s absolute error or loss requirement."
+    },
+    {
+      "id": "unsupported",
+      "short": "U",
+      "definition": "An identifiable inferential gap or contrary evidence prevents the stated extension."
+    },
+    {
+      "id": "unreported",
+      "short": "N",
+      "definition": "The record cannot resolve the coordinate; C3 uses this status because its hypothetical target specifies no action."
+    }
+  ],
+  "method": [
+    "State a target claim and the source result.",
+    "Identify the changed coordinates.",
+    "Inspect source–target comparisons and give a reason for each status.",
+    "Record judge validity, statistical precision, population coverage, and replication separately.",
+    "Narrow the claim or specify the transport test needed for an extension."
+  ],
+  "limits": [
+    "SCOPE is a proposed appraisal framework, not an empirically validated certification standard.",
+    "A coordinate match does not certify safety or establish policy legitimacy.",
+    "Contextual mechanisms alone establish neither direct nor bridged toxicity support.",
+    "Coordinate-wise bridges do not automatically compose; joint changes need joint evidence.",
+    "No worked case in this manuscript asserts a successful empirical bridge."
+  ],
+  "evidence_roles": [
+    {
+      "id": "direct_evidence",
+      "definition": "Defines or measures the retained toxicity endpoint."
+    },
+    {
+      "id": "tested_bridge_evidence",
+      "definition": "Compares source and target conditions for the retained endpoint using the declared tolerance and uncertainty criteria."
+    },
+    {
+      "id": "contextual_evidence",
+      "definition": "Explains an architecture, attack, or governance mechanism without establishing toxicity performance."
+    }
+  ],
+  "role_note": "Evidence roles apply to individual claims, not permanently to a publication. The role direct_evidence and coordinate status direct are related but are not interchangeable labels."
+}

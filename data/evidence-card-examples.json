@@ -1,0 +1,490 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "C1",
+    "title": "Functional accuracy to conversation blocking",
+    "record_kind": "manuscript_worked_example",
+    "record_status": "source_derived_illustration_not_independent_audit",
+    "provenance": {
+      "source_document": "manuscript.tex",
+      "source_sha256": "9c397b79144e602352151378c0cb3ef5278e5e4a0e7f4874239c10067c6043a3",
+      "source_locations": [
+        {
+          "document": "manuscript.tex",
+          "source_sha256": "9c397b79144e602352151378c0cb3ef5278e5e4a0e7f4874239c10067c6043a3",
+          "section": "3.3",
+          "section_title": "Worked Claim Profiles and Transport Tests",
+          "label": "sec:worked-profiles",
+          "source_line": 422
+        },
+        {
+          "section": "4.2",
+          "label": "tab:content-scope-evidence",
+          "description": "HateCheck function/case counts and bounded use."
+        }
+      ],
+      "reference_keys": [
+        "Rottger2021HateCheck"
+      ],
+      "curator": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "verification_level": "Checked against the supplied manuscript; primary studies not independently re-audited"
+    },
+    "source_evidence": {
+      "original_endpoint": "HateCheck’s constructed English functional hate-speech cases under the retained hate policy.",
+      "object_and_configuration": null,
+      "source_result": "The manuscript describes tests of 29 linguistic functions; its representative evidence table reports 3,728 cases.",
+      "valid_bounded_use": "Diagnosis of the represented linguistic functions.",
+      "population_and_sampling_unit": null,
+      "denominators": [],
+      "judge_and_adjudication": null,
+      "limitations": [
+        "The suite is not an estimate of deployment prevalence.",
+        "The deliberately extended claim is the survey’s worked example, not a claim attributed to the HateCheck authors."
+      ],
+      "evidence_role_for_this_claim": null
+    },
+    "target_claim": {
+      "statement": "The functional-suite results justify automatically blocking English conversations under the same hate policy.",
+      "is_hypothetical_extension": true,
+      "attribution_note": "Deliberately extended survey claim, not original authors’ wording.",
+      "action": "Automatically block English conversations."
+    },
+    "coordinate_profile": {
+      "S": {
+        "source_condition": "Retained hate policy",
+        "target_condition": "Same hate policy",
+        "support_status": "direct",
+        "reason": "The hypothetical claim explicitly holds the hate policy fixed."
+      },
+      "C": {
+        "source_condition": "Constructed English cases",
+        "target_condition": "Conversations with history",
+        "support_status": "unsupported",
+        "reason": "Conversational history is outside the functional artifact tests."
+      },
+      "O": {
+        "source_condition": "Individual functional cases",
+        "target_condition": "Sessions judged for blocking",
+        "support_status": "unsupported",
+        "reason": "Session adjudication is not established by artifact-level functional cases."
+      },
+      "P": {
+        "source_condition": "Designed functional suite",
+        "target_condition": "English conversation traffic",
+        "support_status": "unsupported",
+        "reason": "The constructed test distribution does not establish deployed conversation traffic performance."
+      },
+      "E": {
+        "source_condition": "Functional diagnosis",
+        "target_condition": "Automatic blocking",
+        "support_status": "unsupported",
+        "reason": "Threshold-specific blocking errors and consequences are not validated."
+      }
+    },
+    "quality_notes": {
+      "judge_validity": null,
+      "statistical_precision": null,
+      "population_coverage": null,
+      "independent_replication": null,
+      "other_limitations": [
+        "The suite is not an estimate of deployment prevalence.",
+        "The deliberately extended claim is the survey’s worked example, not a claim attributed to the HateCheck authors."
+      ]
+    },
+    "transport_test": {
+      "design": "Pair artifact and session observations on an independently adjudicated conversation sample, retaining benign-sensitive controls and measuring threshold-specific errors.",
+      "matched_conditions": [],
+      "changed_coordinates": [
+        "C",
+        "O",
+        "P",
+        "E"
+      ],
+      "retained_endpoint": "HateCheck’s constructed English functional hate-speech cases under the retained hate policy.",
+      "benign_sensitive_controls": "Benign-sensitive conversations under the same policy.",
+      "adjudication": null,
+      "sampling_unit_and_uncertainty": null,
+      "acceptable_degradation": "Must be prespecified; no numerical tolerance is supplied by this worked case.",
+      "absolute_action_requirement": "Must be established for the target action; no universal threshold is supplied.",
+      "stopping_rule": null,
+      "result": "Proposed test only; no empirical bridge result reported."
+    },
+    "decision": {
+      "supported_claim": "The suite can diagnose the linguistic functions it represents.",
+      "unsupported_extension": "The functional-suite results justify automatically blocking English conversations under the same hate policy.",
+      "recommended_next_evidence": [
+        "Pair artifact and session observations on an independently adjudicated conversation sample, retaining benign-sensitive controls and measuring threshold-specific errors."
+      ],
+      "expiry_or_retest_triggers": []
+    },
+    "use_note": "A completed record is documentation, not proof of safety. Null means not filled in or not established by the cited material; it never means zero risk. Support status and evidence quality must be assessed separately."
+  },
+  {
+    "schema_version": "1.0",
+    "id": "C2",
+    "title": "Refusal detection to justified refusal",
+    "record_kind": "manuscript_worked_example",
+    "record_status": "source_derived_illustration_not_independent_audit",
+    "provenance": {
+      "source_document": "manuscript.tex",
+      "source_sha256": "9c397b79144e602352151378c0cb3ef5278e5e4a0e7f4874239c10067c6043a3",
+      "source_locations": [
+        {
+          "document": "manuscript.tex",
+          "source_sha256": "9c397b79144e602352151378c0cb3ef5278e5e4a0e7f4874239c10067c6043a3",
+          "section": "3.3",
+          "section_title": "Worked Claim Profiles and Transport Tests",
+          "label": "sec:worked-profiles",
+          "source_line": 425
+        },
+        {
+          "section": "5.2",
+          "description": "Separate labels for harm and refusal."
+        }
+      ],
+      "reference_keys": [
+        "Han2024WildGuard"
+      ],
+      "curator": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "verification_level": "Checked against the supplied manuscript; primary studies not independently re-audited"
+    },
+    "source_evidence": {
+      "original_endpoint": "WildGuard’s separate prompt-harmfulness, response-harmfulness, and refusal-detection labels.",
+      "object_and_configuration": null,
+      "source_result": "The source study distinguishes these tasks; refusal-detection F1 measures identification of a refusal.",
+      "valid_bounded_use": "Identifying refusals and evaluating the separately defined task labels on the tested exchanges.",
+      "population_and_sampling_unit": null,
+      "denominators": [],
+      "judge_and_adjudication": null,
+      "limitations": [
+        "A refusal can still leak harmful information.",
+        "A safe response need not refuse.",
+        "This is an illustrative extended claim, not the WildGuard authors’ wording."
+      ],
+      "evidence_role_for_this_claim": null
+    },
+    "target_claim": {
+      "statement": "Refusal-detection F1 alone establishes justified blocking on the same exchanges.",
+      "is_hypothetical_extension": true,
+      "attribution_note": "Deliberately extended survey claim, not original authors’ wording.",
+      "action": "Justified blocking on those exchanges."
+    },
+    "coordinate_profile": {
+      "S": {
+        "source_condition": "Source policy",
+        "target_condition": "Same policy",
+        "support_status": "direct",
+        "reason": "Policy is fixed in the hypothetical extension."
+      },
+      "C": {
+        "source_condition": "Access to the evaluated exchanges",
+        "target_condition": "Same exchanges and access",
+        "support_status": "direct",
+        "reason": "Input access and exchanges are fixed."
+      },
+      "O": {
+        "source_condition": "Whether a refusal occurred",
+        "target_condition": "Whether refusal is appropriate",
+        "support_status": "unsupported",
+        "reason": "A refusal-occurrence label does not establish refusal appropriateness."
+      },
+      "P": {
+        "source_condition": "Tested exchanges and population",
+        "target_condition": "Same population",
+        "support_status": "direct",
+        "reason": "The evaluation population remains fixed."
+      },
+      "E": {
+        "source_condition": "Refusal detection",
+        "target_condition": "Justified blocking",
+        "support_status": "unsupported",
+        "reason": "A blocking rule requires consequences and policy-grounded appropriateness, not refusal detection alone."
+      }
+    },
+    "quality_notes": {
+      "judge_validity": null,
+      "statistical_precision": null,
+      "population_coverage": null,
+      "independent_replication": null,
+      "other_limitations": [
+        "A refusal can still leak harmful information.",
+        "A safe response need not refuse.",
+        "This is an illustrative extended claim, not the WildGuard authors’ wording."
+      ]
+    },
+    "transport_test": {
+      "design": "Jointly assess the request’s policy status, response content, permitted safe alternatives, and intervention consequences. A new threshold on refusal occurrence is insufficient.",
+      "matched_conditions": [],
+      "changed_coordinates": [
+        "O",
+        "E"
+      ],
+      "retained_endpoint": "WildGuard’s separate prompt-harmfulness, response-harmfulness, and refusal-detection labels.",
+      "benign_sensitive_controls": "Harmful requests and benign-sensitive requests, including safe non-refusal answers.",
+      "adjudication": null,
+      "sampling_unit_and_uncertainty": null,
+      "acceptable_degradation": "Must be prespecified; no numerical tolerance is supplied by this worked case.",
+      "absolute_action_requirement": "Must be established for the target action; no universal threshold is supplied.",
+      "stopping_rule": null,
+      "result": "Proposed test only; no empirical bridge result reported."
+    },
+    "decision": {
+      "supported_claim": "Refusal-detection performance supports the refusal-occurrence task under the tested conditions.",
+      "unsupported_extension": "Refusal-detection F1 alone establishes justified blocking on the same exchanges.",
+      "recommended_next_evidence": [
+        "Jointly assess the request’s policy status, response content, permitted safe alternatives, and intervention consequences. A new threshold on refusal occurrence is insufficient."
+      ],
+      "expiry_or_retest_triggers": []
+    },
+    "use_note": "A completed record is documentation, not proof of safety. Null means not filled in or not established by the cited material; it never means zero risk. Support status and evidence quality must be assessed separately."
+  },
+  {
+    "schema_version": "1.0",
+    "id": "C3",
+    "title": "One output to repeated-access exposure",
+    "record_kind": "manuscript_worked_example",
+    "record_status": "source_derived_illustration_not_independent_audit",
+    "provenance": {
+      "source_document": "manuscript.tex",
+      "source_sha256": "9c397b79144e602352151378c0cb3ef5278e5e4a0e7f4874239c10067c6043a3",
+      "source_locations": [
+        {
+          "document": "manuscript.tex",
+          "source_sha256": "9c397b79144e602352151378c0cb3ef5278e5e4a0e7f4874239c10067c6043a3",
+          "section": "3.3",
+          "section_title": "Worked Claim Profiles and Transport Tests",
+          "label": "sec:worked-profiles",
+          "source_line": 428
+        },
+        {
+          "section": "5.1",
+          "label": "eq:interactive-best-of-n-risk",
+          "description": "Independent-trial conversion and its assumptions."
+        }
+      ],
+      "reference_keys": [],
+      "curator": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "verification_level": "Checked against the supplied manuscript; primary studies not independently re-audited"
+    },
+    "source_evidence": {
+      "original_endpoint": "A hypothetical image-level failure rate under a fixed policy and interface.",
+      "object_and_configuration": null,
+      "source_result": "For fixed independent trials at a given prompt and configuration, repeated-access risk is analytically 1 − (1 − r)^n; the worked claim uses n = 100.",
+      "valid_bounded_use": "An image-level rate describes its stated single-output event. The analytic conversion applies only under the stated fixed-independent-trial assumptions.",
+      "population_and_sampling_unit": null,
+      "denominators": [],
+      "judge_and_adjudication": null,
+      "limitations": [
+        "The case is hypothetical and is not an empirical audit of a named paper.",
+        "The equation does not cover dependent or adaptive attempts without additional analysis.",
+        "Averaging prompt-specific rates before the nonlinear conversion need not equal averaging their repeated-access risks."
+      ],
+      "evidence_role_for_this_claim": null
+    },
+    "target_claim": {
+      "statement": "The same image-level failure rate estimates harm within 100 attempts, with policy and interface fixed and no enforcement action specified.",
+      "is_hypothetical_extension": true,
+      "attribution_note": "Deliberately extended survey claim, not original authors’ wording.",
+      "action": null
+    },
+    "coordinate_profile": {
+      "S": {
+        "source_condition": "Fixed image harm policy",
+        "target_condition": "Same policy",
+        "support_status": "direct",
+        "reason": "The hypothetical claim holds policy fixed."
+      },
+      "C": {
+        "source_condition": "Fixed interface",
+        "target_condition": "Same interface",
+        "support_status": "direct",
+        "reason": "The interface is fixed."
+      },
+      "O": {
+        "source_condition": "One output",
+        "target_condition": "At least one harmful output within 100 attempts",
+        "support_status": "unsupported",
+        "reason": "One-image failure and at least one failure within 100 attempts are different events."
+      },
+      "P": {
+        "source_condition": "Single-output sampling regime",
+        "target_condition": "Repeated access with stated budget and stopping",
+        "support_status": "unsupported",
+        "reason": "Repeated access changes the probability regime; correlated or adaptive attempts require a distinct analysis."
+      },
+      "E": {
+        "source_condition": null,
+        "target_condition": null,
+        "support_status": "unreported",
+        "reason": "No action is specified in this hypothetical claim. N does not mean demonstrated absence of evidence for a named action."
+      }
+    },
+    "quality_notes": {
+      "judge_validity": null,
+      "statistical_precision": null,
+      "population_coverage": null,
+      "independent_replication": null,
+      "other_limitations": [
+        "The case is hypothetical and is not an empirical audit of a named paper.",
+        "The equation does not cover dependent or adaptive attempts without additional analysis.",
+        "Averaging prompt-specific rates before the nonlinear conversion need not equal averaging their repeated-access risks."
+      ]
+    },
+    "transport_test": {
+      "design": "Measure prompt-level repeats with a declared stopping rule and quantify uncertainty at the prompt or session level; use the analytic conversion only for fixed independent trials.",
+      "matched_conditions": [],
+      "changed_coordinates": [
+        "O",
+        "P"
+      ],
+      "retained_endpoint": "A hypothetical image-level failure rate under a fixed policy and interface.",
+      "benign_sensitive_controls": "Maintain a consistent policy and adjudication protocol across one-output and repeated-access measurements.",
+      "adjudication": null,
+      "sampling_unit_and_uncertainty": null,
+      "acceptable_degradation": "Must be prespecified; no numerical tolerance is supplied by this worked case.",
+      "absolute_action_requirement": "Not specified because this hypothetical target claim names no enforcement action.",
+      "stopping_rule": null,
+      "result": "Proposed test only; no empirical bridge result reported."
+    },
+    "decision": {
+      "supported_claim": "The source rate concerns its specified image-level event.",
+      "unsupported_extension": "The same image-level failure rate estimates harm within 100 attempts, with policy and interface fixed and no enforcement action specified.",
+      "recommended_next_evidence": [
+        "Measure prompt-level repeats with a declared stopping rule and quantify uncertainty at the prompt or session level; use the analytic conversion only for fixed independent trials."
+      ],
+      "expiry_or_retest_triggers": []
+    },
+    "use_note": "A completed record is documentation, not proof of safety. Null means not filled in or not established by the cited material; it never means zero risk. Support status and evidence quality must be assessed separately."
+  },
+  {
+    "schema_version": "1.0",
+    "id": "C4",
+    "title": "Static screening to component release",
+    "record_kind": "manuscript_worked_example",
+    "record_status": "source_derived_illustration_not_independent_audit",
+    "provenance": {
+      "source_document": "manuscript.tex",
+      "source_sha256": "9c397b79144e602352151378c0cb3ef5278e5e4a0e7f4874239c10067c6043a3",
+      "source_locations": [
+        {
+          "document": "manuscript.tex",
+          "source_sha256": "9c397b79144e602352151378c0cb3ef5278e5e4a0e7f4874239c10067c6043a3",
+          "section": "3.3",
+          "section_title": "Worked Claim Profiles and Transport Tests",
+          "label": "sec:worked-profiles",
+          "source_line": 431
+        },
+        {
+          "section": "7.2",
+          "description": "Concept QuickLook sample, metric limitations, and author overlap."
+        }
+      ],
+      "reference_keys": [
+        "Xu2026ConceptQuickLook"
+      ],
+      "curator": null,
+      "reviewer": null,
+      "reviewed_at": null,
+      "verification_level": "Checked against the supplied manuscript; primary studies not independently re-audited"
+    },
+    "source_evidence": {
+      "original_endpoint": "Concept QuickLook’s original NSFW categories in static single-file embedding inspection; no toxicity crosswalk is established by this case.",
+      "object_and_configuration": null,
+      "source_result": "The manuscript describes SD 1.5/2.0 embedding inspection over 800 reviewed files (500 downloaded and 300 customized), with 15% marked NSFW. These numbers do not establish ecosystem prevalence.",
+      "valid_bounded_use": "Configuration-bound static concept inspection can prioritize further investigation; it does not validate automatic release.",
+      "population_and_sampling_unit": null,
+      "denominators": [],
+      "judge_and_adjudication": null,
+      "limitations": [
+        "The reported Accuracy/FPR/FNR values are not jointly reconcilable under conventional binary definitions.",
+        "The metric inconsistency concerns evidence quality separately from coordinate support.",
+        "Several survey authors also authored Concept QuickLook.",
+        "The NSFW policy must not be silently relabeled targeted social harm or a general toxicity rate."
+      ],
+      "evidence_role_for_this_claim": null
+    },
+    "target_claim": {
+      "statement": "Single-file embedding inspection justifies automatic release across arbitrary compatible compositions while retaining the original NSFW categories.",
+      "is_hypothetical_extension": true,
+      "attribution_note": "Deliberately extended survey claim, not original authors’ wording.",
+      "action": "Automatically release components across arbitrary compatible compositions."
+    },
+    "coordinate_profile": {
+      "S": {
+        "source_condition": "Original NSFW categories",
+        "target_condition": "Same NSFW categories",
+        "support_status": "direct",
+        "reason": "D retains the source NSFW endpoint; it does not establish a mapping to targeted social harm."
+      },
+      "C": {
+        "source_condition": "Single-file static embedding inspection",
+        "target_condition": "Arbitrary compatible executions/compositions",
+        "support_status": "unsupported",
+        "reason": "Executed paths and arbitrary compatible compositions are not covered by a static single-file screen."
+      },
+      "O": {
+        "source_condition": "Embedding similarity and metadata signals",
+        "target_condition": "Generated outcomes after loading",
+        "support_status": "unsupported",
+        "reason": "Static similarity does not observe generated outcomes after loading."
+      },
+      "P": {
+        "source_condition": "Named embedding settings and reviewed sample",
+        "target_condition": "Composition distribution across bases, scales, triggers, and seeds",
+        "support_status": "unsupported",
+        "reason": "The distribution of compositions, bases, triggers, scales, and seeds is untested by static similarity."
+      },
+      "E": {
+        "source_condition": "Inspection and screening",
+        "target_condition": "Automatic release",
+        "support_status": "unsupported",
+        "reason": "Release costs and an operational release rule are not validated."
+      }
+    },
+    "quality_notes": {
+      "judge_validity": null,
+      "statistical_precision": null,
+      "population_coverage": null,
+      "independent_replication": null,
+      "other_limitations": [
+        "The reported Accuracy/FPR/FNR values are not jointly reconcilable under conventional binary definitions.",
+        "The metric inconsistency concerns evidence quality separately from coordinate support.",
+        "Several survey authors also authored Concept QuickLook.",
+        "The NSFW policy must not be silently relabeled targeted social harm or a general toxicity rate."
+      ]
+    },
+    "transport_test": {
+      "design": "Test both scanner-selected and scanner-cleared files on declared bases, scales, triggers, and seeds, with independent image adjudication and benign controls; reconcile the original metric definitions.",
+      "matched_conditions": [],
+      "changed_coordinates": [
+        "C",
+        "O",
+        "P",
+        "E"
+      ],
+      "retained_endpoint": "Concept QuickLook’s original NSFW categories in static single-file embedding inspection; no toxicity crosswalk is established by this case.",
+      "benign_sensitive_controls": "Benign controls and behavioral audits of both scanner-selected and scanner-cleared components.",
+      "adjudication": null,
+      "sampling_unit_and_uncertainty": null,
+      "acceptable_degradation": "Must be prespecified; no numerical tolerance is supplied by this worked case.",
+      "absolute_action_requirement": "Must be established for the target action; no universal threshold is supplied.",
+      "stopping_rule": null,
+      "result": "Proposed test only; no empirical bridge result reported."
+    },
+    "decision": {
+      "supported_claim": "The static inspection feasibility result is bound to its original endpoint and tested configuration.",
+      "unsupported_extension": "Single-file embedding inspection justifies automatic release across arbitrary compatible compositions while retaining the original NSFW categories.",
+      "recommended_next_evidence": [
+        "Test both scanner-selected and scanner-cleared files on declared bases, scales, triggers, and seeds, with independent image adjudication and benign controls; reconcile the original metric definitions."
+      ],
+      "expiry_or_retest_triggers": []
+    },
+    "use_note": "A completed record is documentation, not proof of safety. Null means not filled in or not established by the cited material; it never means zero risk. Support status and evidence quality must be assessed separately."
+  }
+]
