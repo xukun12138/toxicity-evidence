@@ -4,6 +4,7 @@ const $$ = (s, root = document) => [...root.querySelectorAll(s)];
 const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl = value => { try { const u = new URL(value); return ["https:","http:"].includes(u.protocol) ? u.href : "#"; } catch { return "#"; } };
 let references = [], filtered = [], cases = [], definitions, template, resources = [], shown = 15;
+let activeView = null;
 const statuses = ["unreported", "direct", "bridged", "unsupported"];
 
 function download(name, content, mime = "text/plain;charset=utf-8") {
@@ -12,12 +13,36 @@ function download(name, content, mime = "text/plain;charset=utf-8") {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 function route() {
-  const known = ["library", "scope", "cases", "resources", "about"];
-  const id = known.includes(location.hash.slice(1)) ? location.hash.slice(1) : "library";
+  if (location.hash === "#main") return;
+  const known = ["home", "library", "scope", "cases", "resources", "about"];
+  const id = known.includes(location.hash.slice(1)) ? location.hash.slice(1) : "home";
+  const moveFocus = activeView !== null && activeView !== id;
   $$(".view").forEach(e => e.hidden = e.id !== id);
   $$("[data-nav]").forEach(a => { if(a.dataset.nav === id) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+  activeView = id;
+  if (moveFocus) {
+    const heading = $("h1, h2", $("#" + id));
+    heading.setAttribute("tabindex", "-1");
+    heading.focus({preventScroll: true});
+  }
+  window.scrollTo({top: 0, behavior: "instant"});
 }
 window.addEventListener("hashchange", route); route();
+
+const lensCopy = {
+  S: ["01", "What counts as harmful?", "Specify the policy and harm definition before interpreting a detector’s result."],
+  C: ["02", "Which routes can change behavior?", "Identify the exposed prompts, tools, images, and components, and where the evidence is carried."],
+  O: ["03", "What is observed, and how is it judged?", "Specify the event, available information, and judge. One output does not represent an entire interaction."],
+  P: ["04", "Under which exposure conditions?", "Consider the population, system configuration, sampling procedure, and repeated access."],
+  E: ["05", "Which action is being justified?", "Triage, blocking, review, and release have different costs and evidence requirements."]
+};
+$$('[data-lens]').forEach(button => button.addEventListener("click", () => {
+  const [index, question, description] = lensCopy[button.dataset.lens];
+  $$('[data-lens]').forEach(node => node.setAttribute("aria-pressed", String(node === button)));
+  $("#lens-index").textContent = `${index} / 05`;
+  $("#lens-question").textContent = question;
+  $("#lens-description").textContent = description;
+}));
 
 function renderPapers() {
   const query = $("#search").value.trim().toLowerCase();

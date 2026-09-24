@@ -8,6 +8,7 @@ Website: [xukun12138.github.io/toxicity-evidence/](https://xukun12138.github.io/
 
 ## What you can do
 
+- **Start with the overview:** the home page introduces the research question, an interactive SCOPE concept diagram, and direct routes to the paper, bibliography, worksheet, examples, and reusable materials.
 - **Explore literature:** search 183 cited records by title, author, or text; filter by year or where a paper is cited in the manuscript; export the filtered selection as BibTeX, CSV, or JSON.
 - **Build a SCOPE record:** specify a source result and target claim, assess policy, channel, observation, probability, and enforcement separately, and export the worksheet.
 - **Inspect four worked profiles:** follow why functional accuracy, refusal detection, one-output risk, or static component screening does not automatically justify a stronger action claim.

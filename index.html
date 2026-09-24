@@ -5,23 +5,67 @@
   <title>Toxicity Evidence · A SCOPE research companion</title>
   <meta name="description" content="Explore the bibliography, worked examples, and reusable evidence-to-action worksheets accompanying Toxicity Detection for Generative AI Systems.">
   <meta name="theme-color" content="#102a43">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=20260924-home">
+  <script src="app.js?v=20260924-home" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead"><div class="container header-inner">
-  <a class="brand" href="#library"><span class="brand-symbol" aria-hidden="true">S</span><span>Toxicity Evidence<small>A SCOPE research companion</small></span></a>
+  <a class="brand" href="#home"><span class="brand-symbol" aria-hidden="true">S</span><span>Toxicity Evidence<small>A SCOPE research companion</small></span></a>
   <nav aria-label="Main navigation">
-    <a href="#library" data-nav="library">Literature</a><a href="#scope" data-nav="scope">SCOPE worksheet</a><a href="#cases" data-nav="cases">Worked examples</a><a href="#resources" data-nav="resources">Resources</a><a href="#about" data-nav="about">About</a>
+    <a href="#home" data-nav="home">Home</a><a href="#library" data-nav="library">Literature</a><a href="#scope" data-nav="scope">SCOPE worksheet</a><a href="#cases" data-nav="cases">Worked examples</a><a href="#resources" data-nav="resources">Resources</a><a href="#about" data-nav="about">About</a>
   </nav>
   <a class="repo-link" href="https://github.com/xukun12138/toxicity-evidence">GitHub ↗</a>
 </div></header>
-<main id="main" class="container" tabindex="-1">
-<div class="intro"><div><p class="eyebrow">TOXICITY DETECTION FOR GENERATIVE AI SYSTEMS</p><h1>What does the evidence actually support?</h1><p class="lead">Find the literature. Examine the conditions behind a claim. Record what is still needed to justify an action.</p></div><a class="button paper-link" href="downloads/manuscript.pdf">Read the manuscript <span>PDF ↗</span></a></div>
-<div class="snapshot"><span><strong id="total-count">183</strong> bibliography records</span><span><strong>5</strong> SCOPE coordinates</span><span><strong>4</strong> worked profiles</span><span class="snapshot-note">Literature cutoff: 23 Aug 2026 · Companion snapshot: 24 Sep 2026</span></div>
+<main id="main" tabindex="-1">
+<section id="home" class="view home-view" aria-labelledby="home-title">
+  <div class="hero">
+    <div class="container hero-layout">
+      <div class="hero-copy">
+        <p class="hero-kicker"><span aria-hidden="true"></span> A SURVEY & OPEN RESEARCH COMPANION</p>
+        <h1 id="home-title">Toxicity detection.<br><em>Evidence in context.</em></h1>
+        <p class="hero-domain">FOR GENERATIVE AI SYSTEMS</p>
+        <p class="hero-lead">When can a detector’s result justify an action? Explore the literature and examine the conditions behind every claim.</p>
+        <div class="hero-actions"><a class="button hero-primary" href="downloads/manuscript.pdf">Read the paper <span aria-hidden="true">↗</span></a><a class="button hero-secondary" href="#library">Explore the literature <span aria-hidden="true">→</span></a></div>
+        <a class="hero-tertiary" href="#scope">Build a SCOPE evidence record <span aria-hidden="true">↗</span></a>
+        <div class="hero-byline"><span>Kun Xu et al.</span><span aria-hidden="true">/</span><a href="#about">Research manuscript · 2026</a></div>
+      </div>
+      <div class="lens" aria-label="Explore the five SCOPE coordinates">
+        <div class="lens-heading"><span>THE SCOPE LENS</span><span class="lens-hint">Select a coordinate <span aria-hidden="true">↙</span></span></div>
+        <div class="lens-diagram">
+          <svg class="lens-lines" viewBox="0 0 500 350" aria-hidden="true"><circle cx="250" cy="174" r="126"/><circle class="inner-ring" cx="250" cy="174" r="86"/><path d="M250 48L388 128L335 280L165 280L112 128Z"/><path class="lens-spokes" d="M250 174L250 48M250 174L388 128M250 174L335 280M250 174L165 280M250 174L112 128"/></svg>
+          <div class="lens-center" aria-hidden="true"><span>SCOPE</span><small>CONDITIONS MATTER</small></div>
+          <button type="button" class="lens-node node-s" data-lens="S" aria-pressed="true" aria-controls="lens-detail"><b>S</b><span>Safety policy</span></button>
+          <button type="button" class="lens-node node-c" data-lens="C" aria-pressed="false" aria-controls="lens-detail"><b>C</b><span>Control channel</span></button>
+          <button type="button" class="lens-node node-o" data-lens="O" aria-pressed="false" aria-controls="lens-detail"><b>O</b><span>Observation unit</span></button>
+          <button type="button" class="lens-node node-p" data-lens="P" aria-pressed="false" aria-controls="lens-detail"><b>P</b><span>Probability regime</span></button>
+          <button type="button" class="lens-node node-e" data-lens="E" aria-pressed="false" aria-controls="lens-detail"><b>E</b><span>Enforcement action</span></button>
+        </div>
+        <div id="lens-detail" class="lens-detail" aria-live="polite" aria-atomic="true"><span id="lens-index" class="lens-index">01 / 05</span><div><h2 id="lens-question">What counts as harmful?</h2><p id="lens-description">Specify the policy and harm definition before interpreting a detector’s result.</p></div></div>
+        <p class="lens-caption">A framework for examining claims.<br> Each coordinate defines a condition of the evidence.</p>
+      </div>
+    </div>
+    <div class="container hero-footnote"><span>TEXT & IMAGES <i aria-hidden="true">/</i> INTERACTIONS <i aria-hidden="true">/</i> REUSABLE COMPONENTS</span><span>Literature cutoff · 23 Aug 2026</span></div>
+  </div>
+  <div class="home-metrics"><div class="container metrics-grid">
+    <a href="#library"><strong id="total-count">183</strong><span>Cited works<small>Search, filter & export</small></span><span class="metric-arrow" aria-hidden="true">↗</span></a>
+    <a href="#scope"><strong>5</strong><span>SCOPE coordinates<small>Make the conditions explicit</small></span><span class="metric-arrow" aria-hidden="true">↗</span></a>
+    <a href="#cases"><strong>4</strong><span>Worked examples<small>Follow the reasoning</small></span><span class="metric-arrow" aria-hidden="true">↗</span></a>
+  </div></div>
+  <div class="container home-section">
+    <div class="home-section-heading"><div><p class="eyebrow">FROM READING TO REASONING</p><h2>A place to explore.<br>A framework to work with.</h2></div><p>Find relevant studies, examine what their results support, and record the evidence still needed for your intended use.</p></div>
+    <div class="journey-grid">
+      <a class="journey-card" href="#library"><div class="journey-top"><span>01 / EXPLORE</span><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 7h18v26H7zM12 13h8M12 18h8M29 12h5v21h-5M3 11v26h24"/></svg></div><h3>Find your starting point.</h3><p>Browse the manuscript’s bibliography by topic, year, or citation location. Take your reading list with you.</p><span class="journey-link">Explore the literature <b aria-hidden="true">→</b></span></a>
+      <a class="journey-card featured" href="#scope"><div class="journey-top"><span>02 / APPLY</span><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="12"/><path d="M20 2v10M20 28v10M2 20h10M28 20h10"/><circle cx="20" cy="20" r="3"/></svg></div><h3>Put a claim in context.</h3><p>Compare source and target conditions with SCOPE. Capture uncertainty, limitations, and the next test.</p><span class="journey-link">Open the worksheet <b aria-hidden="true">→</b></span></a>
+      <a class="journey-card" href="#cases"><div class="journey-top"><span>03 / UNDERSTAND</span><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 7h11v11H5zM24 22h11v11H24zM16 12h13v10M26 19l3 3 3-3M5 26h11M5 32h8"/></svg></div><h3>See where claims diverge.</h3><p>Follow four examples from functional tests to component release. Identify the comparisons still missing.</p><span class="journey-link">Explore the worked examples <b aria-hidden="true">→</b></span></a>
+    </div>
+    <a class="resource-ribbon" href="#resources"><span class="ribbon-label">READY TO REUSE</span><span>Evidence cards. Evaluation protocols. Reporting checklists.</span><strong>Get the materials <span aria-hidden="true">↗</span></strong></a>
+  </div>
+  <div class="home-question"><div class="container question-layout"><div><p class="eyebrow">THE QUESTION BEHIND THE SURVEY</p><h2>A toxicity score is a starting point.<br><em>What action does it support?</em></h2><p>Results depend on what is measured, how a system is accessed, and what happens next. The survey connects these conditions across content moderation, interactive assistants, image generation, and reusable components.</p><a class="text-link" href="#about">Explore the paper’s scope & findings <span aria-hidden="true">→</span></a></div><div class="claim-path" aria-label="Evidence and claims must be compared under explicit conditions"><div><span>01 / SOURCE</span><h3>A measured result</h3><p>What was actually tested?</p></div><div class="claim-bridge"><span aria-hidden="true">↓</span><p>Compare the conditions<br><b>S · C · O · P · E</b></p><span aria-hidden="true">↓</span></div><div><span>02 / TARGET</span><h3>A bounded claim</h3><p>What use can the evidence justify?</p></div></div></div></div>
+  <div class="container home-paper"><div class="paper-marker" aria-hidden="true">S<span>RESEARCH<br>COMPANION</span></div><div><p class="eyebrow">THE MANUSCRIPT</p><h2>Toxicity Detection for Generative AI Systems:<br>A Survey of Evidence and Governance Validity</h2><p>Kun Xu · Yushu Zhang · Xiangli Xiao · Shuren Qi · Tao Wang · Barbara Carminati · Elena Ferrari · Yuming Fang</p><div class="paper-meta"><span>Research manuscript</span><span>Companion snapshot · 24 Sep 2026</span></div></div><a class="button primary" href="downloads/manuscript.pdf">Read the full paper <span aria-hidden="true">↗</span></a></div>
+</section>
 
-<section id="library" class="view" aria-labelledby="library-title">
+<section id="library" class="view container" aria-labelledby="library-title" hidden>
   <div class="section-heading"><div><p class="eyebrow">01 / EXPLORE</p><h2 id="library-title">Literature explorer</h2></div><span class="pill">Manuscript bibliography</span></div>
   <div class="library-layout"><aside class="filters" aria-label="Literature filters">
     <label for="search">Search the bibliography</label><input id="search" type="search" placeholder="Title, author, keyword…" autocomplete="off">
@@ -34,7 +78,7 @@
   <div><div class="results-toolbar"><p id="result-count" role="status" aria-live="polite">Loading bibliography…</p><div class="export-group" aria-label="Export filtered bibliography"><button data-export="bib" type="button">BibTeX ↓</button><button data-export="csv" type="button">CSV ↓</button><button data-export="json" type="button">JSON ↓</button></div></div><div id="paper-list" class="paper-list"></div><button id="load-more" class="button subtle" type="button" hidden>Show more records</button><p class="small muted">Bibliographic metadata is transcribed from the supplied manuscript. “Find paper” opens a title search; it is not a verified publication link.</p></div></div>
 </section>
 
-<section id="scope" class="view" aria-labelledby="scope-title" hidden>
+<section id="scope" class="view container" aria-labelledby="scope-title" hidden>
   <div class="section-heading"><div><p class="eyebrow">02 / APPLY</p><h2 id="scope-title">Build a SCOPE evidence record</h2><p>Start with one target claim and one source result. Record each coordinate separately.</p></div><a class="text-link" href="data/evidence-card-template.json" download>Blank JSON template ↓</a></div>
   <div class="scope-strip"><div><b>S</b><span>Safety policy</span></div><div><b>C</b><span>Control channel</span></div><div><b>O</b><span>Observation unit</span></div><div><b>P</b><span>Probability regime</span></div><div><b>E</b><span>Enforcement action</span></div></div>
   <div class="notice"><strong>A structured worksheet, not a safety score.</strong> The statuses below are your assessments. Direct support does not imply strong evidence; matching coordinates does not certify a system. Inputs remain in this page and are not sent to a server. Export before closing or reloading.</div>
@@ -49,13 +93,13 @@
   <details class="explanation"><summary>What do the four support statuses mean?</summary><dl><dt>Direct</dt><dd>The target claim stays within the evaluated domain. Evidence quality still needs assessment.</dd><dt>Bridged</dt><dd>A source–target comparison retains an identifiable toxicity endpoint, a declared tolerance, and uncertainty analysis. Joint changes need joint evidence.</dd><dt>Unsupported</dt><dd>An identifiable inferential gap or contrary evidence prevents the extension.</dd><dt>Unreported</dt><dd>The available record cannot resolve the coordinate. Missing reporting is not evidence of failure.</dd></dl></details>
 </section>
 
-<section id="cases" class="view" aria-labelledby="cases-title" hidden>
+<section id="cases" class="view container" aria-labelledby="cases-title" hidden>
   <div class="section-heading"><div><p class="eyebrow">03 / LEARN</p><h2 id="cases-title">Four worked profiles</h2><p>Examples from Section 3.3 of the manuscript: distinguish a supported result from a broader claim.</p></div><a class="text-link" href="data/worked-cases.json" download>Download profiles · JSON ↓</a></div>
   <div class="notice">These are <strong>survey-authored illustrative audits</strong>. The broader target claims are constructed for analysis, not quotations attributed to the cited studies. None demonstrates a successful empirical bridge.</div>
   <div id="case-list" class="case-grid"></div>
 </section>
 
-<section id="resources" class="view" aria-labelledby="resources-title" hidden>
+<section id="resources" class="view container" aria-labelledby="resources-title" hidden>
   <div class="section-heading"><div><p class="eyebrow">04 / REUSE</p><h2 id="resources-title">Materials for your next evaluation</h2><p>Download editable records, plan a transfer test, or follow a source project.</p></div></div>
   <div class="download-grid">
     <article class="download-card"><span class="file-type">JSON / MARKDOWN</span><h3>Claim & evidence record</h3><p>Describe a claim, its supporting result, five coordinate assessments, uncertainty, and remaining gaps.</p><a href="data/evidence-card-template.json" download>Blank JSON ↓</a><a href="#scope">Fill it in the worksheet →</a></article>
@@ -66,7 +110,7 @@
   <div class="section-heading compact"><div><h2>Selected source projects</h2><p>Primary resources linked to works in the bibliography. Consult each project’s own documentation and license.</p></div></div><div id="source-projects" class="resource-grid"></div>
 </section>
 
-<section id="about" class="view" aria-labelledby="about-title" hidden>
+<section id="about" class="view container" aria-labelledby="about-title" hidden>
   <div class="section-heading"><div><p class="eyebrow">05 / UNDERSTAND</p><h2 id="about-title">The paper & the resource</h2></div><span class="pill">Research manuscript</span></div>
   <div class="about-grid"><article class="prose"><h3>Toxicity Detection for Generative AI Systems: A Survey of Evidence and Governance Validity</h3><p>Kun Xu, Yushu Zhang, Xiangli Xiao, Shuren Qi, Tao Wang, Barbara Carminati, Elena Ferrari, and Yuming Fang.</p><p>This structured integrative review asks when toxicity evidence can justify a particular action in a generative system. It connects text moderation, interactive assistants, multimodal generation, and reusable components through five conditions: policy, channel, observation, probability, and enforcement.</p><p>The cross-domain synthesis identifies channel substitution, repeated-access amplification, and judge dependence as recurring limits on evidence transfer. SCOPE is a proposed framework for examining these limits; it remains subject to empirical validation.</p><a class="button" href="downloads/manuscript.pdf">Read the current manuscript ↗</a><h3>What this companion adds</h3><p>A searchable bibliography, four traceable worked profiles, an editable SCOPE worksheet, and reusable evaluation protocols. The bibliography snapshot stays aligned with the supplied manuscript; proposed additions can be discussed through the repository.</p><h3>Cite the manuscript</h3><pre id="survey-citation">@unpublished{Xu2026ToxicityEvidence,
   title = {Toxicity Detection for Generative AI Systems: A Survey of Evidence and Governance Validity},
