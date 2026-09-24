@@ -1,0 +1,61 @@
+name: Propose a resource
+description: Suggest a relevant paper, benchmark, tool, or claim-level record with primary evidence.
+title: "[Resource] "
+body:
+  - type: markdown
+    attributes:
+      value: "New proposals are reviewed separately from the manuscript bibliography snapshot. Please distinguish the original endpoint from any proposed toxicity interpretation."
+  - type: input
+    id: title
+    attributes:
+      label: Resource or publication title
+    validations:
+      required: true
+  - type: input
+    id: authors_year
+    attributes:
+      label: Authors / organization, year, and version
+    validations:
+      required: true
+  - type: input
+    id: primary_url
+    attributes:
+      label: Primary paper or project URL
+    validations:
+      required: true
+  - type: dropdown
+    id: resource_type
+    attributes:
+      label: Resource type
+      options:
+        - Paper
+        - Dataset or benchmark
+        - Code or evaluation tool
+        - Documentation or reporting artifact
+        - Proposed claim-level record
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Relevance and original endpoint
+      description: Explain the connection to the survey, what the resource measures, and whether it is toxicity evidence or a contextual safety mechanism.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Exact evidence location and bounded contribution
+      description: Cite a section, table, configuration, or artifact. Preserve denominators, tested conditions, and limitations; do not infer a general safety guarantee.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: License, availability, and relationship to existing entries
+      description: Identify a duplicate/preprint version or existing bibliography key where applicable. State the resource's own license if known.
+  - type: textarea
+    id: limits
+    attributes:
+      label: Unresolved questions or limitations
+      description: Include missing information, endpoint mismatch, and whether any proposed extension is hypothetical.

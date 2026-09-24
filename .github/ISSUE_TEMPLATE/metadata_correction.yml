@@ -1,0 +1,53 @@
+name: Metadata correction
+description: Correct a bibliographic field, citation location, or primary resource link.
+title: "[Metadata] "
+body:
+  - type: markdown
+    attributes:
+      value: "Please support factual corrections with a primary publication or project record. A citation-location tag is not an evidence-quality label."
+  - type: input
+    id: record
+    attributes:
+      label: Bibliography key or affected page
+      placeholder: Rottger2021HateCheck
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: Field to correct
+      options:
+        - Title or author names
+        - Publication year or venue
+        - DOI or primary URL
+        - BibTeX record
+        - Manuscript citation location
+        - Other factual metadata
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Current value and proposed correction
+      description: Identify the cited version if preprint and publication metadata differ.
+    validations:
+      required: true
+  - type: input
+    id: primary_source
+    attributes:
+      label: Primary source URL
+      description: Publisher record, proceedings page, authors' official project, or equivalent.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence location and explanation
+      description: State exactly where the primary source supports the correction.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Optional. Do not include credentials or private correspondence.
