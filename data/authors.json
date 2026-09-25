@@ -1,0 +1,315 @@
+{
+  "profiles_checked_on": "2026-09-25",
+  "ordering": "Manuscript author order; profile roles reflect the linked public pages at the check date.",
+  "portrait_use": "Author and institutional portraits are reproduced as proportionally resized web thumbnails for these author cards. Faces and backgrounds are unaltered; original URLs, primary profile pages, and source/thumbnail SHA-256 values are recorded per author. Copyright remains with the respective rights holders; the site code license does not license these portraits.",
+  "authors": [
+    {
+      "id": "kun-xu",
+      "name": "Kun Xu",
+      "role": "Ph.D. Candidate in Cyberspace Security",
+      "institution": "Nanjing University of Aeronautics and Astronautics",
+      "bio": "Kun Xu studies the security and reliability of generative AI, with a focus on concept-level risks in text-to-image models and deepfake detection. His work also examines uncertainty, calibration, and privacy-aware synthesis, connecting model evaluation with trustworthy deployment.",
+      "research_interests": [
+        "Generative AI security",
+        "Concept-level risk",
+        "Uncertainty & calibration",
+        "Deepfake forensics"
+      ],
+      "email": "xukun930@nuaa.edu.cn",
+      "homepage": "https://xukun12138.github.io/",
+      "portrait_url": "portraits/kun-xu.webp",
+      "portrait_source": "https://xukun12138.github.io/",
+      "sources": [
+        {
+          "url": "https://xukun12138.github.io/",
+          "supports": [
+            "role",
+            "institution",
+            "bio",
+            "researchInterests",
+            "email",
+            "portraitUrl"
+          ]
+        }
+      ],
+      "portrait_original_url": "https://xukun12138.github.io/assets/images/profile-scenic.jpg",
+      "portrait_original_sha256": "48037dd1552e5714e4670f2ffb2cb11b184acd65a14d96090c1546eeb9b9c736",
+      "portrait_sha256": "625db451633edef08285c75d6706520a0a066d6cf272868f58413a658829ae80"
+    },
+    {
+      "id": "yushu-zhang",
+      "name": "Yushu Zhang",
+      "role": "Professor & Doctoral Supervisor",
+      "institution": "Jiangxi University of Finance and Economics",
+      "bio": "Yushu Zhang researches multimedia security, privacy protection, and trustworthy artificial intelligence. His work spans image privacy across data, content, and feature representations, alongside cybersecurity and blockchain. He supervises doctoral research and is an IEEE Senior Member.",
+      "research_interests": [
+        "Multimedia security",
+        "Privacy protection",
+        "Trustworthy AI",
+        "Blockchain"
+      ],
+      "email": "zhangyushu@jxufe.edu.cn",
+      "homepage": "https://yushuzhang.cn/",
+      "portrait_url": "portraits/yushu-zhang.webp",
+      "portrait_source": "https://yushuzhang.cn/",
+      "sources": [
+        {
+          "url": "https://yushuzhang.cn/",
+          "supports": [
+            "role",
+            "institution",
+            "department",
+            "bio",
+            "researchInterests",
+            "email",
+            "portraitUrl"
+          ]
+        }
+      ],
+      "portrait_original_url": "https://yushuzhang.cn/src/yushuzhang.png",
+      "portrait_original_sha256": "23c19a9c711163c1f4d7647d9aef46d6c5a7277b66e47cdbc078d46c024d7a86",
+      "portrait_sha256": "904de7e89af04a8ab4010838bedb5116b8b2bbc392d1ff91f2f062c12ab9ce1c"
+    },
+    {
+      "id": "xiangli-xiao",
+      "name": "Xiangli Xiao",
+      "role": "Lecturer & Master's Supervisor",
+      "institution": "Jiangxi University of Finance and Economics",
+      "bio": "Xiangli Xiao researches financial information security and multimedia content security, including watermarking and digital copyright protection. He earned his Ph.D. in cybersecurity at Nanjing University of Aeronautics and Astronautics and teaches applied cryptography and privacy-preserving computing.",
+      "research_interests": [
+        "Financial information security",
+        "Multimedia content security",
+        "Digital watermarking",
+        "Copyright protection"
+      ],
+      "email": "xiaoxiangli@jxufe.edu.cn",
+      "homepage": "https://xiaoxiangli.top/",
+      "portrait_url": "portraits/xiangli-xiao.webp",
+      "portrait_source": "https://xiaoxiangli.top/",
+      "sources": [
+        {
+          "url": "https://xiaoxiangli.top/",
+          "supports": [
+            "role",
+            "institution",
+            "department",
+            "researchInterests",
+            "email",
+            "portraitUrl"
+          ]
+        },
+        {
+          "url": "https://xiaoxiangli.top/data.js",
+          "supports": [
+            "bio",
+            "doctoralEducation",
+            "teaching",
+            "watermarkingAndCopyrightResearch"
+          ]
+        }
+      ],
+      "portrait_original_url": "https://xiaoxiangli.top/avatar.png",
+      "portrait_original_sha256": "69e5aa80a47312ebb4b23d36ca59f59a7204d1ca704b7ec8871b3e59b1440581",
+      "portrait_sha256": "56356301b3ea38dc1f4a0f3733e832a43b4efe95987e3f8523b326b540c772ff"
+    },
+    {
+      "id": "shuren-qi",
+      "name": "Shuren Qi",
+      "role": "Postdoctoral Fellow",
+      "institution": "City University of Hong Kong",
+      "bio": "Shuren Qi studies principled and scalable data representations at City University of Hong Kong. His research examines invariance, symmetry, and hierarchy as inductive biases, developing learning frameworks that combine theoretical foundations with transparent structure and scalability.",
+      "research_interests": [
+        "Invariance and symmetry",
+        "Representation theory",
+        "Geometric deep learning",
+        "World models",
+        "Trustworthy AI"
+      ],
+      "email": "shurenqi@cityu.edu.hk",
+      "homepage": "https://shurenqi.github.io/",
+      "portrait_url": "portraits/shuren-qi.webp",
+      "portrait_source": "https://shurenqi.github.io/",
+      "sources": [
+        {
+          "url": "https://shurenqi.github.io/",
+          "supports": [
+            "role",
+            "institution",
+            "department",
+            "bio",
+            "interests",
+            "email",
+            "additionalPublicEmail",
+            "portrait"
+          ],
+          "note": "Homepage explicitly states current CityU postdoctoral appointment and both email addresses. Portrait is the img with alt=Shuren Qi and src=files/shuren_2025.jpg."
+        }
+      ],
+      "portrait_original_url": "https://shurenqi.github.io/files/shuren_2025.jpg",
+      "portrait_original_sha256": "876f60ad4463f39df09c0e5286ed8f6186b64c1adf32ed54258b5a702d709414",
+      "portrait_sha256": "d75dab6ded9490e6643364f7a3362affdb0f7ab3f6bc1122fd857377808e525e"
+    },
+    {
+      "id": "tao-wang",
+      "name": "Tao Wang",
+      "role": "Ph.D. Student",
+      "institution": "Nanjing University of Aeronautics and Astronautics",
+      "bio": "Tao Wang is a doctoral student at Nanjing University of Aeronautics and Astronautics, supervised by Yushu Zhang. He studies AI privacy, contextual privacy, and privacy evaluation, and previously visited the University of Milan to work with Pierangela Samarati.",
+      "research_interests": [
+        "AI privacy",
+        "Computational social science",
+        "Contextual privacy",
+        "Privacy evaluation"
+      ],
+      "email": "wangtao21@nuaa.edu.cn",
+      "homepage": "https://daizigege.github.io/",
+      "portrait_url": "portraits/tao-wang.webp",
+      "portrait_source": "https://daizigege.github.io/",
+      "sources": [
+        {
+          "url": "https://daizigege.github.io/",
+          "supports": [
+            "role",
+            "institution",
+            "department",
+            "bio",
+            "interests",
+            "email",
+            "additionalPublicEmail",
+            "portrait"
+          ],
+          "note": "About Me lists third-year Ph.D. status, research interests and emails. Education identifies Cyberspace Security as field (not an administrative department) and Milan visit as 2025.09–2026.08. Portrait img has alt=Tao Wang and src=images/head_image.png."
+        }
+      ],
+      "portrait_original_url": "https://daizigege.github.io/images/head_image.png",
+      "portrait_original_sha256": "70f81eea68e5b5784cad3cb9d7aa0381db6868d67fc44d8f7d10e83d60e18431",
+      "portrait_sha256": "638c7d50e1aa79c0537180027043268041471445b2a9d155a55160479acbdac1"
+    },
+    {
+      "id": "barbara-carminati",
+      "name": "Barbara Carminati",
+      "role": "Full Professor of Computer Science",
+      "institution": "University of Insubria",
+      "bio": "Barbara Carminati studies security and privacy in data management and data-intensive applications at the University of Insubria. Her work spans access control, decentralized systems, IoT, and security analytics. She is an ACM Distinguished Member and an IEEE Senior Member.",
+      "research_interests": [
+        "Data security and privacy",
+        "Access control",
+        "Decentralized systems",
+        "IoT and edge security",
+        "LLMs for security analytics"
+      ],
+      "email": "barbara.carminati@uninsubria.it",
+      "homepage": "https://dawsec.dicom.uninsubria.it/barbara.carminati/",
+      "portrait_url": "portraits/barbara-carminati.webp",
+      "portrait_source": "https://dawsec.dicom.uninsubria.it/barbara.carminati/",
+      "sources": [
+        {
+          "url": "https://dawsec.dicom.uninsubria.it/barbara.carminati/",
+          "supports": "Role, institution, research areas, membership distinctions, professional email and portrait"
+        },
+        {
+          "url": "https://dawsec.dicom.uninsubria.it/barbara.carminati/?page_id=269",
+          "supports": "Detailed research fields including lightweight LLMs for security analytics"
+        },
+        {
+          "url": "https://uninsubria.unifind.cineca.it/get/person/032462",
+          "supports": "Official university appointment and professional email"
+        }
+      ],
+      "portrait_original_url": "https://dawsec.dicom.uninsubria.it/barbara.carminati/wp-content/uploads/2025/12/Bc.jpg",
+      "portrait_original_sha256": "a5fae85f03cfa3c832c9d029f8076acaff1fe01dde22144d73363b5ea4f2ec23",
+      "portrait_sha256": "d160971060c550159788d32c24cd7da5a8bf3a8745259c7c8fd2a993e1c875ca"
+    },
+    {
+      "id": "elena-ferrari",
+      "name": "Elena Ferrari",
+      "role": "Full Professor of Computer Science",
+      "institution": "University of Insubria",
+      "bio": "Elena Ferrari leads the STRICT SociaLab at the University of Insubria. Her research develops secure and privacy-preserving data-sharing technologies across social networks, IoT, and data systems. She is an ACM Fellow and an IEEE Fellow.",
+      "research_interests": [
+        "Data security and privacy",
+        "Access control",
+        "AI for cybersecurity",
+        "IoT security",
+        "Trust and risk"
+      ],
+      "email": "Elena.Ferrari@uninsubria.it",
+      "homepage": "https://dawsec.dicom.uninsubria.it/elena.ferrari/",
+      "portrait_url": "portraits/elena-ferrari.webp",
+      "portrait_source": "https://dawsec.dicom.uninsubria.it/elena.ferrari/wp-json/wp/v2/media?media_type=image&per_page=100",
+      "sources": [
+        {
+          "url": "https://dawsec.dicom.uninsubria.it/elena.ferrari/about",
+          "supports": "Role, institution, lab leadership, research fields, ACM and IEEE fellowships"
+        },
+        {
+          "url": "https://uninsubria.unifind.cineca.it/resource/person/267?language=en_US",
+          "supports": "Official university appointment, department and professional email"
+        },
+        {
+          "url": "https://dawsec.dicom.uninsubria.it/elena.ferrari/wp-json/wp/v2/media?media_type=image&per_page=100",
+          "supports": "Author-labeled portrait URL and dimensions"
+        }
+      ],
+      "portrait_original_url": "https://dawsec.dicom.uninsubria.it/elena.ferrari/wp-content/uploads/2010/10/Elena-Ferrari.jpg",
+      "portrait_original_sha256": "37f10ec2c782bdaabd7adf12a0da5176199b1d4eaaf8f48195e1dc260ea180f2",
+      "portrait_sha256": "b3e502a70ace7964461f1157376a663f8b198ec80a87a270eb024751be5aa853"
+    },
+    {
+      "id": "yuming-fang",
+      "name": "Yuming Fang",
+      "role": "Professor · Vice President",
+      "institution": "Jiangxi University of Finance and Economics",
+      "bio": "Yuming Fang is a professor and vice president of Jiangxi University of Finance and Economics. His research spans artificial intelligence, visual data processing, and virtual reality. He also supervises doctoral research in areas including computer vision and machine learning.",
+      "research_interests": [
+        "Artificial intelligence",
+        "Visual data processing",
+        "Virtual reality",
+        "Computer vision",
+        "Machine learning"
+      ],
+      "email": "leo.fangyuming@foxmail.com",
+      "homepage": "https://m.jxufe.edu.cn/news-show-119.html",
+      "portrait_url": "portraits/yuming-fang.webp",
+      "portrait_source": "https://m.jxufe.edu.cn/news-show-119.html",
+      "sources": [
+        {
+          "url": "https://m.jxufe.edu.cn/news-show-119.html",
+          "supports": [
+            "role",
+            "institution",
+            "bio",
+            "interests:artificial intelligence",
+            "interests:visual data processing",
+            "interests:virtual reality",
+            "portrait"
+          ],
+          "note": "Official university leadership profile lists professor, doctoral supervisor, vice president, and AI / visual big-data intelligent processing / VR. Main article portrait img src=/uploadfile/186/202512/554cf9c668.jpg; its alt is empty."
+        },
+        {
+          "url": "https://stat.jxufe.edu.cn/news-show-8441.html",
+          "supports": [
+            "role",
+            "institution",
+            "email",
+            "additionalPublicEmail",
+            "interests:computer vision",
+            "interests:machine learning",
+            "bio"
+          ],
+          "note": "Official university faculty profile dated 2025-09-07 explicitly lists both public academic contact emails, professor/vice president and doctoral supervision. Computer vision and machine learning are in its research fields."
+        },
+        {
+          "url": "https://cai.jxufe.edu.cn/lists/134.html",
+          "supports": [
+            "email"
+          ],
+          "note": "Official computer-science faculty listing search result also explicitly pairs Fang with leo.fangyuming@foxmail.com."
+        }
+      ],
+      "portrait_original_url": "https://m.jxufe.edu.cn/uploadfile/186/202512/554cf9c668.jpg",
+      "portrait_original_sha256": "56dc5868657f78459211e4028a99fab802b11f7e9840bddb414e6b5abdb330cd",
+      "portrait_sha256": "a5d46d3bd4b4867f289d353af61c6dbf42d523901ebf100b06bd23108a88f3b8"
+    }
+  ]
+}

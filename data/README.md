@@ -16,6 +16,7 @@ This package turns the supplied survey into searchable references, an explicit c
 | `evidence-card-template.json` | Blank reusable record for a specific claim and its proposed extension. |
 | `evidence-card-examples.json` | Four populated illustrations using the same record shape. These are manuscript summaries, not independent study audits. |
 | `evidence-card.schema.json` | JSON Schema for the record shape and coordinate-status vocabulary. Structural validation is not substantive validation. |
+| `authors.json` | Public author profiles, academic contact details, portrait thumbnails and original source URLs, image hashes, and primary sources; independently dated from the literature snapshot. |
 
 ## What the counts mean
 
