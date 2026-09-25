@@ -14,6 +14,7 @@ Website: [xukun12138.github.io/toxicity-evidence/](https://xukun12138.github.io/
 - **Inspect four worked profiles:** follow why functional accuracy, refusal detection, one-output risk, or static component screening does not automatically justify a stronger action claim.
 - **Reuse protocols:** download a [transport-test protocol](downloads/transport-test-protocol.md), [governance reporting checklist](downloads/governance-checklist.md), [blank evidence card](data/evidence-card-template.json), and [populated examples](data/evidence-card-examples.json).
 - **Trace provenance:** inspect source hashes, manuscript locations, original BibTeX, and known limitations rather than relying on a paper ranking.
+- **Meet the authors:** browse eight profile cards with portraits, concise biographies, research interests, public academic email addresses, and primary profile links on the [About page](https://xukun12138.github.io/toxicity-evidence/#about).
 
 Read the [manuscript](downloads/manuscript.pdf) for the complete argument. The companion is a resource snapshot associated with the manuscript, not a claim of exhaustive literature coverage.
 
@@ -71,6 +72,18 @@ The first script extracts active citations, ignoring comments, and regenerates t
 Review the resulting diff, confirm the keys and counts against the revised manuscript, check the original endpoint and source locations for every changed case, and preview the site. Do not label newly proposed resources part of the manuscript bibliography until the manuscript actually cites them. The scripts generate only their documented files; separately curated source-project links should be verified against primary project pages when updated.
 
 ## Corrections and contributions
+
+### Author profiles
+
+The About page follows the manuscript's author order. Roles and affiliations reflect the linked public profiles checked on **25 September 2026**; the manuscript PDF records its own author affiliations. Public professional contact details, image URLs, and primary sources are recorded in [data/authors.json](data/authors.json).
+
+To update a profile, verify it against its primary source, edit `data/authors.json`, update the check date and the visible About-page date, then run:
+
+```sh
+python tools/build_author_cards.py
+```
+
+The script regenerates only the marked author-card region in `index.html`. Preview the result before publishing. Portraits are served as small WebP thumbnails from this site and load lazily. These thumbnails preserve the source photographs, with proportional resizing and no alterations to faces or backgrounds. Original source URLs and image hashes are retained in the profile data. Portraits remain under their respective rights holders and are excluded from the repository's code license; see [portrait attribution](portraits/README.md). If an image fails to load, the card shows initials and retains its profile link.
 
 Use the [issue tracker](https://github.com/xukun12138/toxicity-evidence/issues) for metadata corrections or proposed resources. Supply a primary source and exact evidence location. Read [CONTRIBUTING.md](CONTRIBUTING.md) before adding a claim-level record or changing a worked example.
 

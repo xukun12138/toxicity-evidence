@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-25 — Author profiles and About redesign
+
+- Introduce eight author cards with source-linked portraits, biographies, research interests, public academic email addresses, and profile buttons.
+- Organize About into a manuscript overview, author team, resource provenance, and citation area, with keyboard-accessible section navigation.
+- Use two columns on wide screens and one column on phones; preserve readable contact details and image-failure fallbacks.
+- Record profile sources in `data/authors.json` and provide a standard-library script to regenerate the static cards.
+- Preserve the manuscript, bibliography, SCOPE definitions, worked examples, and existing site tools.
+
 ## 2026-09-24 — Homepage redesign
 
 - Add a dedicated Home view with a prominent research introduction and direct paper, bibliography, and worksheet links.

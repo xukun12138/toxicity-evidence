@@ -120,6 +120,18 @@ $("#case-list").addEventListener("click",e=>{
 function renderResources(){ $("#source-projects").innerHTML=resources.map(r=>`<article class="resource-card"><p class="eyebrow">${esc(r.kind)}</p><h3>${esc(r.name)}</h3><p>${esc(r.description)}</p><a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener noreferrer">Open primary resource ↗</a><p class="small muted" style="margin-top:10px">Link checked ${esc(r.verified_on)}. No experiments reproduced.</p></article>`).join(""); }
 $("#download-citation").addEventListener("click",()=>download("toxicity-evidence-survey.bib",$("#survey-citation").textContent));
 
+$$('[data-about-jump]').forEach(button => button.addEventListener('click', () => {
+  const heading = document.getElementById(button.dataset.aboutJump);
+  heading.setAttribute('tabindex','-1');
+  heading.focus({preventScroll:true});
+  heading.scrollIntoView({block:'start',behavior:'auto'});
+}));
+$$('.author-portrait img').forEach(img => {
+  const unavailable = () => { img.hidden = true; img.parentElement.classList.add('image-unavailable'); };
+  img.addEventListener('error', unavailable);
+  if (img.complete && !img.naturalWidth) unavailable();
+});
+
 async function loadJson(file){const r=await fetch(file);if(!r.ok)throw new Error(`Could not load ${file} (${r.status})`);return r.json();}
 (async()=>{
   try {
